@@ -1,0 +1,6 @@
+Ingeniería Civil Ambiental, ICA, 12
+Ingeniería Civil Biotecnología, ICB, 12
+Ingeniería Civil Eléctrica, ICE, 12
+Ingeniería Civil Física, ICF, 12
+Ingeniería Civil Informatica, ICI, 12
+Ingeniería Civil Matemática, ICM, 12
