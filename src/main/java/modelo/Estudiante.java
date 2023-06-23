@@ -1,10 +1,11 @@
 package modelo;
 
+import java.math.BigInteger;
+
 public class Estudiante {
 	private String nombre;
-	private String apellido;
-	private int rut;
-	private int nMatricula;
+	private BigInteger rut;
+	private BigInteger nMatricula;
 	public Carrera carrera;
 
 	public String getNombre() {
@@ -15,27 +16,19 @@ public class Estudiante {
 		this.nombre = nombre;
 	}
 
-	public String getApellido() {
-		return this.apellido;
-	}
-
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
-	}
-
-	public int getRut() {
+	public BigInteger getRut() {
 		return this.rut;
 	}
 
-	public void setRut(int rut) {
+	public void setRut(BigInteger rut) {
 		this.rut = rut;
 	}
 
-	public int getNMatricula() {
+	public BigInteger getNMatricula() {
 		return this.nMatricula;
 	}
 
-	public void setNMatricula(int nMatricula) {
+	public void setNMatricula(BigInteger nMatricula) {
 		this.nMatricula = nMatricula;
 	}
 
@@ -43,7 +36,15 @@ public class Estudiante {
 		throw new UnsupportedOperationException();
 	}
 
-	public Estudiante(String nombre, String apellido, int rut, int nMatricula) {
-		throw new UnsupportedOperationException();
+	public Estudiante(String nombre, BigInteger rut, BigInteger nMatricula, Carrera carrera) {
+		this.nombre = nombre;
+		this.rut = rut;
+		this.nMatricula = nMatricula;
+		this.carrera = carrera;
+	}
+
+	@Override
+	public String toString() {
+		return nombre+ ", " +rut+ ", " +nMatricula+ ", " +carrera.getNombre();
 	}
 }
